@@ -534,8 +534,11 @@ void	SubdividePatch (patch_t *patch)
     patch_t	*newp;
 
     w = patch->winding;
-    mins[0] = mins[1] = mins[2] = 99999;
-    maxs[0] = maxs[1] = maxs[2] = -99999;
+    // WID: Bounds fix.
+    mins[0] = mins[1] = mins[2] = 999999;
+    maxs[0] = maxs[1] = maxs[2] = -999999;
+    //mins[0] = mins[1] = mins[2] = 99999;
+    //maxs[0] = maxs[1] = maxs[2] = -99999;
     for (i=0 ; i<w->numpoints ; i++)
     {
         for (j=0 ; j<3 ; j++)
@@ -655,19 +658,27 @@ void SubdividePatches (void)
         return;
 
     num = num_patches;	// because the list will grow
-    for (i=0 ; i<num ; i++)
+    // WID: Bounds fix.
+    num = num_patches;	// because the list will grow
+    for (i = 0; i < num; i++)
     {
-		if (dicepatches)
-        DicePatch (&patches[i]);
-		else
- 		SubdividePatch (&patches[i]);
+        //		SubdividePatch (&patches[i]);
+        DicePatch(&patches[i]);
     }
-    for (i=0; i<num_patches; i++)
-        patches[i].nodenum = PointInNodenum (patches[i].origin);
-    printf ("%i subdiv patches of %i maximum\n", num_patches, MAX_PATCHES);
-    printf("-------------------------\n");
+    qprintf("%i patches after dicing subdivision\n", num_patches);
+  //  for (i=0 ; i<num ; i++)
+  //  {
+		//if (dicepatches)
+  //      DicePatch (&patches[i]);
+		//else
+ 	//	SubdividePatch (&patches[i]);
+  //  }
+  //  for (i=0; i<num_patches; i++)
+  //      patches[i].nodenum = PointInNodenum (patches[i].origin);
+  //  printf ("%i subdiv patches of %i maximum\n", num_patches, MAX_PATCHES);
+  //  printf("-------------------------\n");
 
-    qprintf( "[? patch->cluster=-1 count is %i  ?in solid leaf?]\n", cluster_neg_one );
+  //  qprintf( "[? patch->cluster=-1 count is %i  ?in solid leaf?]\n", cluster_neg_one );
 }
 
 //=====================================================================

@@ -223,12 +223,12 @@ void SwapBSPFile (qboolean todisk)
 //
 	for (i=0 ; i<numfaces ; i++)
 	{
-		dfaces[i].texinfo = LittleShort (dfaces[i].texinfo);
-		dfaces[i].planenum = LittleShort (dfaces[i].planenum);
-		dfaces[i].side = LittleShort (dfaces[i].side);
-		dfaces[i].lightofs = LittleLong (dfaces[i].lightofs);
-		dfaces[i].firstedge = LittleLong (dfaces[i].firstedge);
-		dfaces[i].numedges = LittleShort (dfaces[i].numedges);
+		dfaces[i].texinfo = LittleLong (dfaces[i].texinfo);
+		dfaces[i].planenum = LittleLong(dfaces[i].planenum);
+		dfaces[i].side = LittleLong(dfaces[i].side);
+		dfaces[i].lightofs = LittleLong(dfaces[i].lightofs);
+		dfaces[i].firstedge = LittleLong(dfaces[i].firstedge);
+		dfaces[i].numedges = LittleLong(dfaces[i].numedges);
 	}
 
 //
@@ -242,10 +242,10 @@ void SwapBSPFile (qboolean todisk)
 			dnodes[i].mins[j] = LittleShort (dnodes[i].mins[j]);
 			dnodes[i].maxs[j] = LittleShort (dnodes[i].maxs[j]);
 		}
-		dnodes[i].children[0] = LittleLong (dnodes[i].children[0]);
-		dnodes[i].children[1] = LittleLong (dnodes[i].children[1]);
-		dnodes[i].firstface = LittleShort (dnodes[i].firstface);
-		dnodes[i].numfaces = LittleShort (dnodes[i].numfaces);
+		dnodes[i].children[0] = LittleLong(dnodes[i].children[0]);
+		dnodes[i].children[1] = LittleLong(dnodes[i].children[1]);
+		dnodes[i].firstface = LittleLong(dnodes[i].firstface);
+		dnodes[i].numfaces = LittleLong(dnodes[i].numfaces);
 	}
 
 //
@@ -254,31 +254,31 @@ void SwapBSPFile (qboolean todisk)
 	for (i=0 ; i<numleafs ; i++)
 	{
 		dleafs[i].contents = LittleLong (dleafs[i].contents);
-		dleafs[i].cluster = LittleShort (dleafs[i].cluster);
-		dleafs[i].area = LittleShort (dleafs[i].area);
+		dleafs[i].cluster = LittleLong(dleafs[i].cluster);
+		dleafs[i].area = LittleLong(dleafs[i].area);
 		for (j=0 ; j<3 ; j++)
 		{
 			dleafs[i].mins[j] = LittleShort (dleafs[i].mins[j]);
 			dleafs[i].maxs[j] = LittleShort (dleafs[i].maxs[j]);
 		}
 
-		dleafs[i].firstleafface = LittleShort (dleafs[i].firstleafface);
-		dleafs[i].numleaffaces = LittleShort (dleafs[i].numleaffaces);
-		dleafs[i].firstleafbrush = LittleShort (dleafs[i].firstleafbrush);
-		dleafs[i].numleafbrushes = LittleShort (dleafs[i].numleafbrushes);
+		dleafs[i].firstleafface = LittleLong(dleafs[i].firstleafface);
+		dleafs[i].numleaffaces = LittleLong(dleafs[i].numleaffaces);
+		dleafs[i].firstleafbrush = LittleLong(dleafs[i].firstleafbrush);
+		dleafs[i].numleafbrushes = LittleLong(dleafs[i].numleafbrushes);
 	}
 
 //
 // leaffaces
 //
 	for (i=0 ; i<numleaffaces ; i++)
-		dleaffaces[i] = LittleShort (dleaffaces[i]);
+		dleaffaces[i] = LittleLong(dleaffaces[i]);
 
 //
 // leafbrushes
 //
 	for (i=0 ; i<numleafbrushes ; i++)
-		dleafbrushes[i] = LittleShort (dleafbrushes[i]);
+		dleafbrushes[i] = LittleLong(dleafbrushes[i]);
 
 //
 // surfedges
@@ -291,8 +291,8 @@ void SwapBSPFile (qboolean todisk)
 //
 	for (i=0 ; i<numedges ; i++)
 	{
-		dedges[i].v[0] = LittleShort (dedges[i].v[0]);
-		dedges[i].v[1] = LittleShort (dedges[i].v[1]);
+		dedges[i].v[0] = LittleLong(dedges[i].v[0]);
+		dedges[i].v[1] = LittleLong(dedges[i].v[1]);
 	}
 
 //
@@ -328,8 +328,8 @@ void SwapBSPFile (qboolean todisk)
 //
 	for (i=0 ; i<numbrushsides ; i++)
 	{
-		dbrushsides[i].planenum = LittleShort (dbrushsides[i].planenum);
-		dbrushsides[i].texinfo = LittleShort (dbrushsides[i].texinfo);
+		dbrushsides[i].planenum = LittleLong(dbrushsides[i].planenum);
+		dbrushsides[i].texinfo = LittleLong(dbrushsides[i].texinfo);
 	}
 
 //
@@ -385,8 +385,8 @@ void	LoadBSPFile (char *filename)
 
 	if (header->ident != WIDBSPHEADER)
 		Error ("%s is not a IBSP file", filename);
-	if (header->version != BSPVERSION)
-		Error ("%s is version %i, not %i", filename, header->version, BSPVERSION);
+	if (header->version != WIDBSPVERSION)
+		Error ("%s is version %i, not %i", filename, header->version, WIDBSPVERSION);
 
 	nummodels = CopyLump (LUMP_MODELS, dmodels, sizeof(dmodel_t));
 	numvertexes = CopyLump (LUMP_VERTEXES, dvertexes, sizeof(dvertex_t));
@@ -444,8 +444,8 @@ void	LoadBSPFileTexinfo (char *filename)
 
 	if (header->ident != WIDBSPHEADER)
 		Error ("%s is not a IBSP file", filename);
-	if (header->version != BSPVERSION)
-		Error ("%s is version %i, not %i", filename, header->version, BSPVERSION);
+	if (header->version != WIDBSPVERSION)
+		Error ("%s is version %i, not %i", filename, header->version, WIDBSPVERSION);
 
 
 	length = header->lumps[LUMP_TEXINFO].filelen;
@@ -496,7 +496,7 @@ void	WriteBSPFile (char *filename)
 	SwapBSPFile (true);
 
 	header->ident = LittleLong (WIDBSPHEADER);
-	header->version = LittleLong (BSPVERSION);
+	header->version = LittleLong (WIDBSPVERSION);
 
 	wadfile = SafeOpenWrite (filename);
 	SafeWrite (wadfile, header, sizeof(dheader_t));	// overwritten later

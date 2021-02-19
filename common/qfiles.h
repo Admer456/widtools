@@ -218,10 +218,10 @@ typedef struct miptex_s
 
 // WatIsDeze: Custom BSP Header.
 #define WIDBSPHEADER	(('P'<<24)+('S'<<16)+('B'<<8)+'W')
-		// little-endian "IBSP"
+		// little-endian "WBSP"
 
 // WatIsDeze: Custom version.
-#define BSPVERSION	1
+#define WIDBSPVERSION	1
 
 
 // WBSP Boundaries.
@@ -230,6 +230,11 @@ typedef struct miptex_s
 
 #define WBSP_WORLD_SIZE		( WBSP_MAX_BOUNDS - WBSP_MIN_BOUNDS )
 
+// WBSP Maxes used in tools.
+#define MAX_MAP_SIZE 32768
+#define MAX_HALF_SIZE (MAX_MAP_SIZE/2)
+#define MAX_BLOCK_SIZE (MAX_MAP_SIZE/8)
+#define MAX_POINTS_HASH (MAX_MAP_SIZE/128)
 
 // upper design bounds
 // leaffaces, leafbrushes, planes, and verts are still bounded by

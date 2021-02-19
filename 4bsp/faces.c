@@ -79,12 +79,12 @@ typedef struct hashvert_s
     int		num;
 } hashvert_t;
 
-
-#define	HASH_SIZE	64
+// WID: Moved to qfiles.h
+//#define	MAX_POINTS_HASH	64
 
 
 int	vertexchain[MAX_MAP_VERTS];		// the next vertex in a hash chain
-int	hashverts[HASH_SIZE*HASH_SIZE];	// a vertex number, or 0 for no verts
+int	hashverts[MAX_POINTS_HASH*MAX_POINTS_HASH];	// a vertex number, or 0 for no verts
 
 face_t		*edgefaces[MAX_MAP_EDGES][2];
 
@@ -95,12 +95,15 @@ unsigned HashVec (vec3_t vec)
 {
     int			x, y;
 
-    x = (4096 + (int)(vec[0]+0.5)) >> 7;
-    y = (4096 + (int)(vec[1]+0.5)) >> 7;
-    if ( x < 0 || x >= HASH_SIZE || y < 0 || y >= HASH_SIZE )
+    // WID: Bounds fix.
+    x = (max_bounds + (int)(vec[0] + 0.5)) >> 7;
+    y = (max_bounds + (int)(vec[1] + 0.5)) >> 7;
+    //x = (4096 + (int)(vec[0]+0.5)) >> 7;
+    //y = (4096 + (int)(vec[1]+0.5)) >> 7;
+    if ( x < 0 || x >= MAX_POINTS_HASH || y < 0 || y >= MAX_POINTS_HASH )
         Error ("HashVec: point outside valid range");
 
-    return y*HASH_SIZE + x;
+    return y*MAX_POINTS_HASH + x;
 }
 vec_t g_min_vertex_diff_sq = 99999.9f; // jitdebug
 vec3_t g_min_vertex_pos; // jitdebug
@@ -188,8 +191,9 @@ int	GetVertexnum (vec3_t v)
     {
         if ( fabs(v[i] - (int)(v[i]+0.5)) < INTEGRAL_EPSILON )
             v[i] = (int)(v[i]+0.5);
-        if (v[i] < -4096 || v[i] > 4096)
-            Error ("GetVertexnum: outside +/- 4096");
+        // WID: Bounds fix.
+        if (v[i] < -max_bounds || v[i] > max_bounds)
+            Error ("GetVertexnum: outside +/- %i", max_bounds);
     }
 
     // search for an existing vertex match
@@ -351,10 +355,15 @@ void FindEdgeVerts (vec3_t v1, vec3_t v2)
     }
 #endif
 
-    x1 = (4096 + (int)(v1[0]+0.5)) >> 7;
-    y1 = (4096 + (int)(v1[1]+0.5)) >> 7;
-    x2 = (4096 + (int)(v2[0]+0.5)) >> 7;
-    y2 = (4096 + (int)(v2[1]+0.5)) >> 7;
+    // WID: Bounds fix.
+    x1 = (max_bounds + (int)(v1[0]+0.5)) >> 7;
+    y1 = (max_bounds + (int)(v1[1]+0.5)) >> 7;
+    x2 = (max_bounds + (int)(v2[0]+0.5)) >> 7;
+    y2 = (max_bounds + (int)(v2[1]+0.5)) >> 7;
+    //x1 = (4096 + (int)(v1[0]+0.5)) >> 7;
+    //y1 = (4096 + (int)(v1[1]+0.5)) >> 7;
+    //x2 = (4096 + (int)(v2[0]+0.5)) >> 7;
+    //y2 = (4096 + (int)(v2[1]+0.5)) >> 7;
 
     if (x1 > x2)
     {
@@ -375,19 +384,19 @@ void FindEdgeVerts (vec3_t v1, vec3_t v2)
     y2++;
     if (x1 < 0)
         x1 = 0;
-    if (x2 >= HASH_SIZE)
-        x2 = HASH_SIZE;
+    if (x2 >= MAX_POINTS_HASH)
+        x2 = MAX_POINTS_HASH;
     if (y1 < 0)
         y1 = 0;
-    if (y2 >= HASH_SIZE)
-        y2 = HASH_SIZE;
+    if (y2 >= MAX_POINTS_HASH)
+        y2 = MAX_POINTS_HASH;
 #endif
     num_edge_verts = 0;
     for (x=x1 ; x <= x2 ; x++)
     {
         for (y=y1 ; y <= y2 ; y++)
         {
-            for (vnum=hashverts[y*HASH_SIZE+x] ; vnum ; vnum=vertexchain[vnum])
+            for (vnum=hashverts[y*MAX_POINTS_HASH+x] ; vnum ; vnum=vertexchain[vnum])
             {
                 edge_verts[num_edge_verts++] = vnum;
             }

@@ -68,7 +68,7 @@ typedef struct
 } transfer_t;
 
 
-#define	MAX_PATCHES	65535			// larger will cause 32 bit overflows
+#define	MAX_PATCHES	65535	// larger will cause 32 bit overflows
 
 #define DEFAULT_SMOOTHING_VALUE     44.0
 #define DEFAULT_NUDGE_VALUE     0.25

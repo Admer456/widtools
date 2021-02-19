@@ -599,8 +599,11 @@ qboolean WindingIsHuge (winding_t *w)
 	for (i=0 ; i<w->numpoints ; i++)
 	{
 		for (j=0 ; j<3 ; j++)
-			if (w->p[i][j] < -8000 || w->p[i][j] > 8000)
+			// WID: Bounds Limit Fix.
+			if (w->p[i][j] < -(2 * max_bounds) || w->p[i][j] > (2 * max_bounds))
 				return true;
+			//if (w->p[i][j] < -8000 || w->p[i][j] > 8000)
+			//	return true;
 	}
 	return false;
 }
@@ -991,7 +994,9 @@ void SplitBrush (bspbrush_t *brush, int planenum,
 		BoundBrush (b[i]);
 		for (j=0 ; j<3 ; j++)
 		{
-			if (b[i]->mins[j] < -4096 || b[i]->maxs[j] > 4096)
+			// WID: Bounds fix.
+			if (b[i]->mins[j] < -max_bounds || b[i]->maxs[j] > max_bounds)
+			//if (b[i]->mins[j] < -4096 || b[i]->maxs[j] > 4096)
 			{
 				qprintf ("bogus brush after clip\n");
 				break;

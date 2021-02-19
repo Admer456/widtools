@@ -194,6 +194,13 @@ extern	char		source[1024];
 void 	LoadMapFile (char *filename);
 int		FindFloatPlane (vec3_t normal, vec_t dist, int bnum);
 
+
+//=============================================================================
+
+// 4bsp.c
+extern const int max_bounds;
+extern const int block_size;
+
 //=============================================================================
 
 // textures.c
