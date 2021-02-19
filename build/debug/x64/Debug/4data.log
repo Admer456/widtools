@@ -1,2 +1,11 @@
 ﻿D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: The intermediate directory (../build/debug/x64\Debug\) contains files shared from another project (widbsp.vcxproj, widrad.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  trilib.c
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(159,57): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(166,22): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(187,19): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(242,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(243,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(245,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(246,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\trilib.c(181,31): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
   4data.vcxproj -> D:\Development\Programming\Repositories\Nac-Tools\widtools\build\debug\x64\Debug\widdata.exe

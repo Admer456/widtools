@@ -685,7 +685,7 @@ void TriangulatePoints (triangulation_t *trian)
         return;
 
     // find the two closest points
-    bestd = 9999;
+    bestd = 999999;
     for (i=0 ; i<trian->numpoints ; i++)
     {
         p1 = trian->points[i]->origin;

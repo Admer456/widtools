@@ -1,2 +1,130 @@
 ﻿D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: The intermediate directory (../build/debug/x64\Debug\) contains files shared from another project (widbsp.vcxproj, widdata.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  bspfile.c
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(159,57): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(166,22): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(187,19): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(242,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(243,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(245,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(246,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\bspfile.c(120,22): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\bspfile.c(723,29): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\bspfile.c(771,16): warning C4244: 'return': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\bspfile.c(783,13): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\bspfile.c(784,13): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\bspfile.c(785,13): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+  polylib.c
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(159,57): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(166,22): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(187,19): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(242,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(243,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(245,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(246,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\polylib.c(154,40): warning C4244: '+=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\polylib.c(194,26): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\polylib.c(216,22): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\polylib.c(280,52): warning C4244: '=': conversion from 'intptr_t' to 'int', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\polylib.c(328,28): warning C4244: '=': conversion from 'vec_t' to 'int', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\polylib.c(534,50): warning C4305: 'function': truncation from 'double' to 'const vec_t'
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\polylib.c(591,25): warning C4305: '+=': truncation from 'double' to 'vec_t'
+  4rad.c
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(159,57): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(166,22): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(187,19): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(242,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(243,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(245,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(246,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\4rad.c(327,25): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\4rad.c(459,35): warning C4018: '<': signed/unsigned mismatch
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\4rad.c(491,33): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\4rad.c(549,21): warning C4018: '<': signed/unsigned mismatch
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\4rad.c(553,44): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\4rad.c(588,17): warning C4018: '<': signed/unsigned mismatch
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\4rad.c(623,32): warning C4018: '<': signed/unsigned mismatch
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\4rad.c(660,32): warning C4018: '<': signed/unsigned mismatch
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\4rad.c(748,17): warning C4018: '<': signed/unsigned mismatch
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\4rad.c(765,34): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\4rad.c(773,33): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\4rad.c(796,17): warning C4018: '<': signed/unsigned mismatch
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\4rad.c(965,38): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\4rad.c(970,38): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\4rad.c(975,42): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\4rad.c(980,42): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\4rad.c(991,42): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\4rad.c(996,44): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\4rad.c(1001,44): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\4rad.c(1007,44): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\4rad.c(1030,47): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\4rad.c(1036,44): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\4rad.c(1037,55): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\4rad.c(1042,45): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\4rad.c(1052,46): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\4rad.c(1118,22): warning C4305: '=': truncation from 'double' to 'float'
+  lightmap.c
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(159,57): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(166,22): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(187,19): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(242,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(243,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(245,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(246,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(155,50): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(289,22): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(371,84): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(394,66): warning C4244: 'function': conversion from '__int64' to 'int', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(394,88): warning C4244: 'function': conversion from '__int64' to 'int', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(465,70): warning C4244: 'function': conversion from '__int64' to 'int', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(465,92): warning C4244: 'function': conversion from '__int64' to 'int', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(465,134): warning C4244: 'function': conversion from '__int64' to 'int', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(465,156): warning C4244: 'function': conversion from '__int64' to 'int', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(637,15): warning C4305: '=': truncation from 'double' to 'vec_t'
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(696,34): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(866,30): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(963,36): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(964,35): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(966,32): warning C4244: '=': conversion from 'vec_t' to 'int', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(967,42): warning C4244: '=': conversion from 'vec_t' to 'int', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(981,40): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(982,39): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(984,36): warning C4244: '=': conversion from 'vec_t' to 'int', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(985,46): warning C4244: '=': conversion from 'vec_t' to 'int', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(1046,46): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(1102,30): warning C4244: '=': conversion from 'int' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(1103,30): warning C4244: '=': conversion from 'int' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(1249,49): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(1255,46): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(1308,46): warning C4244: '=': conversion from 'vec_t' to 'int', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(1310,49): warning C4244: '=': conversion from 'vec_t' to 'int', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(1323,38): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(1329,42): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(1339,42): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(1369,54): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(1401,60): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(1402,60): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(1413,28): warning C4018: '<': signed/unsigned mismatch
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(1646,9): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(1861,13): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(1913,17): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(2044,91): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\lightmap.c(2058,13): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+  patches.c
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(159,57): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(166,22): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(187,19): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(242,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(243,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(245,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\common\mathlib.h(246,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\patches.c(184,38): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\patches.c(188,38): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\patches.c(192,38): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\patches.c(201,53): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\patches.c(243,1): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\patches.c(568,35): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\patches.c(569,51): warning C4305: 'function': truncation from 'double' to 'const vec_t'
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\patches.c(624,48): warning C4244: '=': conversion from 'double' to 'vec_t', possible loss of data
+D:\Development\Programming\Repositories\Nac-Tools\widtools\4rad\patches.c(625,51): warning C4305: 'function': truncation from 'double' to 'const vec_t'
+  Generating Code...
   4rad.vcxproj -> D:\Development\Programming\Repositories\Nac-Tools\widtools\build\debug\x64\Debug\widrad.exe
