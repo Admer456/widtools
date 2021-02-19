@@ -8,8 +8,12 @@
 *.d
 *.layout
  *~
- .vscode
- .vs
- build/
-autosave/
-/.vs
+
+build/*
+build/debug/*
+build/release/*
+autosave/*
+.vscode
+.vscode/*
+.vs
+.vs/*
