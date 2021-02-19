@@ -66,8 +66,9 @@ int		num_edge_verts;
 int		edge_verts[MAX_MAP_VERTS];
 
 
-float	subdivide_size = 240;
-float	sublight_size = 240;
+// WID: Improved BSP. These were 240.
+float	subdivide_size = 1024;
+float	sublight_size = 1024;
 
 face_t *NewFaceFromFace (face_t *f);
 

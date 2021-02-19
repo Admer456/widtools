@@ -657,7 +657,6 @@ void SubdividePatches (void)
     if (subdiv < 1)
         return;
 
-    num = num_patches;	// because the list will grow
     // WID: Bounds fix.
     num = num_patches;	// because the list will grow
     for (i = 0; i < num; i++)

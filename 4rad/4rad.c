@@ -46,7 +46,7 @@ vec3_t		face_offset[MAX_MAP_FACES];		// for rotating bmodels
 dplane_t	backplanes[MAX_MAP_PLANES];
 
 char		inbase[32], outbase[32];
-char		basedir[64] = "baseq2"; //qb; default
+char		basedir[64] = "basenac"; // WID: Default.
 
 int			fakeplanes;					// created planes for origin offset
 
