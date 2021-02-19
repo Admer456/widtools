@@ -364,7 +364,7 @@ int main (int argc, char **argv)
     char		path[2053] = "";
 
 
-    printf( "\n\n<<<<<<<<<<<<<<<<<<<<<<< 4bsp >>>>>>>>>>>>>>>>>>>>>>>>\n" );
+    printf( "\n\n<<<<<<<<<<<<<<<<<<<<<<< widbsp >>>>>>>>>>>>>>>>>>>>>>>>\n" );
     printf( "BSP compiler build " __DATE__ "\n" );
 
     for (i=1 ; i<argc ; i++)
@@ -381,8 +381,8 @@ int main (int argc, char **argv)
         }
         else if (!strcmp(argv[i], "-help"))
         {
-            printf ("4bsp supporting v38 and v220 map formats.\n"
-                    "usage: 4bsp [options] mapfile\n\n"
+            printf ("widbsp supporting v38 and v220 map formats.\n"
+                    "usage: widbsp [options] mapfile\n\n"
                     "    -chop #: Subdivide size.\n"
                     "        Default: 240  Range: 32-1024\n"
                     "    -choplight #: Subdivide size for surface lights.\n"
@@ -404,7 +404,7 @@ int main (int argc, char **argv)
                     "    -noprune: Disable node pruning.\n"
                     "    -noorigfix: Disable texture fix for origin offsets.\n"
                     "    -v: Display more verbose output.\n"
-                    "<<<<<<<<<<<<<<<<<<<<< 4bsp HELP >>>>>>>>>>>>>>>>>>>>>\n\n");
+                    "<<<<<<<<<<<<<<<<<<<<< widbsp HELP >>>>>>>>>>>>>>>>>>>>>\n\n");
 
             exit(1);
         }
@@ -529,8 +529,8 @@ int main (int argc, char **argv)
 
     if (i != argc - 1)
     {
-        printf ("4bsp supporting v38 and v220 map formats.\n"
-                "usage: 4bsp [options] mapfile\n\n"
+        printf ("widbsp supporting v38 and v220 map formats.\n"
+                "usage: widbsp [options] mapfile\n\n"
                 "    -help                 -chop #            -choplight\n"
                 "    -nosubdiv             -micro #           -nomerge\n"
                 "    -block # #            -noweld            -notjunc\n"
@@ -590,7 +590,7 @@ int main (int argc, char **argv)
         ProcessModels ();
     }
 
-    printf( "<<<<<<<<<<<<<<<<<< END 4bsp >>>>>>>>>>>>>>>>>>\n\n" );
+    printf( "<<<<<<<<<<<<<<<<<< END widbsp >>>>>>>>>>>>>>>>>>\n\n" );
 
     return 0;
 }

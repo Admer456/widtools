@@ -877,7 +877,7 @@ int main (int argc, char **argv)
     double		start, end;
     char		name[1060];
 
-    printf( "\n\n<<<<<<<<<<<<<<<<<<<<<<< 4rad >>>>>>>>>>>>>>>>>>>>>>>>\n" );
+    printf( "\n\n<<<<<<<<<<<<<<<<<<<<<<< widrad >>>>>>>>>>>>>>>>>>>>>>>>\n" );
     printf( "radiosity compiler build " __DATE__ "\n" );
 
     verbose = false;
@@ -900,8 +900,8 @@ int main (int argc, char **argv)
         }
         else if (!strcmp(argv[i], "-help"))
         {
-            printf ("4rad with automatic phong.\n"
-                    "usage: 4rad [options] mapfile\n\n"
+            printf ("widrad with automatic phong.\n"
+                    "usage: widrad [options] mapfile\n\n"
                     "-smooth #: Threshold angle (# and 180deg - #) for phong smoothing.\n"
                     "-extra: Use extra samples to smooth lighting.\n"
                     "-nudge: Nudge factor for samples. Fraction of distance from center.\n"
@@ -925,7 +925,7 @@ int main (int argc, char **argv)
                     "-noblock: Brushes don't block lighting path.\n"
                     "-threads #:  Number of CPU cores to use.\n\n"
                    );
-    printf( "<<<<<<<<<<<<<<<<<<<<< 4rad HELP >>>>>>>>>>>>>>>>>>>>>\n\n" );
+    printf( "<<<<<<<<<<<<<<<<<<<<< widrad HELP >>>>>>>>>>>>>>>>>>>>>\n\n" );
 
             exit(1);
         }
@@ -1080,7 +1080,7 @@ int main (int argc, char **argv)
 
     if (i != argc - 1)
     {
-        printf ("usage: 4rad [options] mapfile\n\n"
+        printf ("usage: widrad [options] mapfile\n\n"
                "    -help                -extra               -maxdata\n"
                "    -subdiv #            -scale               -direct\n"
                "    -entity              -nopvs               -noblock\n"
@@ -1133,7 +1133,7 @@ int main (int argc, char **argv)
     printf ("%5.0f seconds elapsed\n", end-start);
     printf ("%i bytes light data used of %i max.\n", lightdatasize, maxdata);
 
-    printf( "<<<<<<<<<<<<<<<<<< END 4rad >>>>>>>>>>>>>>>>>>\n\n" );
+    printf( "<<<<<<<<<<<<<<<<<< END widrad >>>>>>>>>>>>>>>>>>\n\n" );
     return 0;
 }
 

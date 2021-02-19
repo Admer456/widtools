@@ -532,7 +532,7 @@ int main (int argc, char **argv)
 	}
 
 	if (i >= argc)
-		Error ("usage: 4data [-archive <directory>] [-release <directory>] [-only <model>] [-3ds] file.qgt");
+		Error ("usage: widdata [-archive <directory>] [-release <directory>] [-only <model>] [-3ds] file.qgt");
 
 	if (do3ds)
 		trifileext = ext_3ds;
