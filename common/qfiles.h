@@ -216,18 +216,27 @@ typedef struct miptex_s
 ==============================================================================
 */
 
-#define IDBSPHEADER	(('P'<<24)+('S'<<16)+('B'<<8)+'I')
+// WatIsDeze: Custom BSP Header.
+#define WIDBSPHEADER	(('P'<<24)+('S'<<16)+('B'<<8)+'W')
 		// little-endian "IBSP"
 
-#define BSPVERSION	38
+// WatIsDeze: Custom version.
+#define BSPVERSION	1
+
+
+// WBSP Boundaries.
+#define WBSP_MAX_BOUNDS		( 32768 )	// 16 bit short range max.
+#define WBSP_MIN_BOUNDS		( -32728 )	// 16 bit short range max.
+
+#define WBSP_WORLD_SIZE		( WBSP_MAX_BOUNDS - WBSP_MIN_BOUNDS )
 
 
 // upper design bounds
 // leaffaces, leafbrushes, planes, and verts are still bounded by
 // 16 bit short limits
-#define	MAX_MAP_MODELS		1024
-#define	MAX_MAP_BRUSHES		8192
-#define	MAX_MAP_ENTITIES	2048
+#define	MAX_MAP_MODELS		8192		// WID: Was 1024
+#define	MAX_MAP_BRUSHES		65536		// WID: Was 8192
+#define	MAX_MAP_ENTITIES	8192		// WID: Was 2048
 #define	MAX_MAP_ENTSTRING	0x40000
 #define	DEFAULT_MAP_TEXINFO	8192  //mxd: vanilla
 #define	MAX_MAP_TEXINFO		16384 //mxd: KMQ2

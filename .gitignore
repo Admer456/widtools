@@ -9,4 +9,7 @@
 *.layout
  *~
  .vscode
+ .vs
+ build/
 autosave/
+/.vs

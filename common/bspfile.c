@@ -383,7 +383,7 @@ void	LoadBSPFile (char *filename)
 	for (i=0 ; i< sizeof(dheader_t)/4 ; i++)
 		((int *)header)[i] = LittleLong ( ((int *)header)[i]);
 
-	if (header->ident != IDBSPHEADER)
+	if (header->ident != WIDBSPHEADER)
 		Error ("%s is not a IBSP file", filename);
 	if (header->version != BSPVERSION)
 		Error ("%s is version %i, not %i", filename, header->version, BSPVERSION);
@@ -442,7 +442,7 @@ void	LoadBSPFileTexinfo (char *filename)
 	for (i=0 ; i< sizeof(dheader_t)/4 ; i++)
 		((int *)header)[i] = LittleLong ( ((int *)header)[i]);
 
-	if (header->ident != IDBSPHEADER)
+	if (header->ident != WIDBSPHEADER)
 		Error ("%s is not a IBSP file", filename);
 	if (header->version != BSPVERSION)
 		Error ("%s is version %i, not %i", filename, header->version, BSPVERSION);
@@ -495,7 +495,7 @@ void	WriteBSPFile (char *filename)
 
 	SwapBSPFile (true);
 
-	header->ident = LittleLong (IDBSPHEADER);
+	header->ident = LittleLong (WIDBSPHEADER);
 	header->version = LittleLong (BSPVERSION);
 
 	wadfile = SafeOpenWrite (filename);
