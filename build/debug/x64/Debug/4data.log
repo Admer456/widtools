@@ -1,2 +1,2 @@
-﻿D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: The intermediate directory (../build/debug/x64\Debug\) contains files shared from another project (4bsp.vcxproj, 4rad.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  4data.vcxproj -> D:\Development\Programming\Repositories\Nac-Tools\widtools\build\debug\x64\Debug\4data.exe
+﻿D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: The intermediate directory (../build/debug/x64\Debug\) contains files shared from another project (4bsp.vcxproj, 4data.vcxproj, 4rad.vcxproj, widbsp.vcxproj, widrad.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  4data.vcxproj -> D:\Development\Programming\Repositories\Nac-Tools\widtools\build\debug\x64\Debug\widdata.exe
