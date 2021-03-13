@@ -10,3 +10,9 @@
  *~
  .vscode
 autosave/
+/.vs
+/4bsp/x64/Debug
+/4data/x64/Debug
+/4rad/x64/Debug
+/4vis/x64/Debug
+/x64/Debug
