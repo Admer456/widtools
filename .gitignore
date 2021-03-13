@@ -8,7 +8,8 @@
 *.d
 *.layout
  *~
-
+out/
+out/*
 build/*
 build/debug/*
 build/release/*
