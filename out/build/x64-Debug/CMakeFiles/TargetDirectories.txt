@@ -1,0 +1,6 @@
+D:/Development/Programming/Repositories/Nac-Tools/widtools/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+D:/Development/Programming/Repositories/Nac-Tools/widtools/out/build/x64-Debug/CMakeFiles/widbsp.dir
+D:/Development/Programming/Repositories/Nac-Tools/widtools/out/build/x64-Debug/CMakeFiles/widdata.dir
+D:/Development/Programming/Repositories/Nac-Tools/widtools/out/build/x64-Debug/CMakeFiles/widvis.dir
+D:/Development/Programming/Repositories/Nac-Tools/widtools/out/build/x64-Debug/CMakeFiles/widrad.dir
+D:/Development/Programming/Repositories/Nac-Tools/widtools/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

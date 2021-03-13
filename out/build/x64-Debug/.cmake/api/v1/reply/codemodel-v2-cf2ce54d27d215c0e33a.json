@@ -1,0 +1,86 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "WidTools",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "widbsp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-widbsp-Debug-6e6e950f98a829c064f5.json",
+					"name" : "widbsp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "widdata::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-widdata-Debug-2df8d582b53ebb11d222.json",
+					"name" : "widdata",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "widrad::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-widrad-Debug-f54beaf089b7f930dc2a.json",
+					"name" : "widrad",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "widvis::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-widvis-Debug-9e1ca2216fa0b7dbb873.json",
+					"name" : "widvis",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Development/Programming/Repositories/Nac-Tools/widtools/out/build/x64-Debug",
+		"source" : "D:/Development/Programming/Repositories/Nac-Tools/widtools"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 2
+	}
+}

@@ -18,7 +18,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 ===========================================================================
 */
 
-// 4data.h
+// widdata.h
 
 
 #include <stdlib.h>
