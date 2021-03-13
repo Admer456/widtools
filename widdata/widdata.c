@@ -18,7 +18,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 ===========================================================================
 */
 
-#include "4data.h"
+#include "widdata.h"
 
 qboolean	g_compress_pak;
 qboolean	g_release;			// don't grab, copy output data to new tree
