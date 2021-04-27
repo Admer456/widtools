@@ -144,6 +144,8 @@ qboolean	save_trace = false;
 
 char		source[1024];
 
+char        altGamePath[1024];
+
 /*
 ===================================================================
 
@@ -885,6 +887,8 @@ int main (int argc, char **argv)
     maxdata = DEFAULT_MAP_LIGHTING; //qb: adjustable
     dlightdata_ptr = dlightdata;
 
+    altGamePath[0] = '\0';
+
     for (i=1 ; i<argc ; i++)
     {
         if (!strcmp(argv[i],"-dump"))
@@ -916,6 +920,8 @@ int main (int argc, char **argv)
                     "-ambient: Minimum light level.\n"
                     "-maxlight: Maximium light level.\n"
                     "-basedir <dir> :The base (mod) directory for textures.\n"
+                    "-gamedir <dir> :The base (mod) directory for everything else.\n"
+                    "                Use this if you're compiling outside of the maps folder.\n"
                     "-v: Verbose output for debugging.\n"
                     "-tmpin: Read from tmp directory.\n"
                     "-tmpout: Write to tmp directory.\n"
@@ -958,6 +964,11 @@ int main (int argc, char **argv)
         else if (!strcmp(argv[i],"-basedir")) //qb: secondary dir for texture search
         {
             strcpy(basedir, (argv[i+1]));
+            i++;
+        }
+        else if ( !strcmp( argv[i], "-gamedir" ) ) // 
+        {
+            strcpy( altGamePath, (argv[i+1]) );
             i++;
         }
         else if (!strcmp(argv[i],"-chop"))
@@ -1088,7 +1099,7 @@ int main (int argc, char **argv)
                "    -maxlight            -tmpin               -tmpout\n"
                "    -dump                -bounce              -threads\n"
                "    -smooth              -sunradscale #       -dice\n"
-               "    -nudge               -v (verbose output)\n\n");
+               "    -nudge               -v (verbose output)  -gamedir\n\n");
         exit(1);
     }
     start = I_FloatTime ();
@@ -1096,6 +1107,23 @@ int main (int argc, char **argv)
     smoothing_threshold = (float)cos(smoothing_value * (Q_PI / 180.0));
 
     SetQdirFromPath (argv[i]);
+
+    if ( altGamePath[0] )
+    {
+        char temp[1024];
+
+        strcpy( moddir, altGamePath ); // moddir = altGamePath ("D:/Games/MyGame/basenac")
+        strcat( moddir, "/" ); // moddir += "/"
+        
+        strcpy( temp, moddir );
+        strcat( temp, "../" ); 
+        strcpy( gamedir, temp ); // gamedir = moddir + "../" ("D:/Games/MyGame/NAC/")
+
+        strcpy( temp, gamedir );
+        strcat( temp, "../" );
+        strcpy( qdir, temp ); // qdir = gamedir + "../" ("D:/Games/")
+    }
+    
     printf("qdir = %s\n", qdir );
     printf("gamedir = %s\n", gamedir );
     strcpy (source, ExpandArg(argv[i]));
