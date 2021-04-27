@@ -175,9 +175,9 @@ void qprintf(char *format, ...)
 * Path determination
 *
 * assumes
-*   moddir is parent of whatever directory contains the .map/.bsp
-*   gamedir is parent of moddir
-*   qdir is parent of gamedir
+*   moddir is parent of whatever directory contains the .map/.bsp (D:/MyGame/base/maps)
+*   gamedir is parent of moddir (D:/MyGame/base/)
+*   qdir is parent of gamedir (D:/Game/)
 */
 char qdir[1024] = "";
 char gamedir[1024] = "";
